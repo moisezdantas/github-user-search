@@ -1,0 +1,37 @@
+.home-container {
+  position: absolute;
+  width: 580px;
+  height: 128px;
+  left: 120px;
+  top: 179px;
+}
+
+.home-title {
+  font-family: Red Hat Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 64px;
+  /* or 133% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+
+  color: #062847;
+}
+
+.home-description {
+  font-family: Red Hat Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+  /* or 180% */
+
+  color: #5a6774;
+}
+
+.home-email {
+    color:  #1890ff;
+}

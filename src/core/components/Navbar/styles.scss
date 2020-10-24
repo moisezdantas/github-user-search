@@ -1,0 +1,34 @@
+.nav-container {
+  position: absolute;
+  width: 100%;
+  height: 62px;
+  left: 0px;
+  top: 0px;
+  background: #1890ff;
+}
+
+.nav-menu-item {
+  position: absolute;
+  width: 250px;
+  height: 32px;
+  left: 41px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+
+  display: flex;
+  align-items: center;
+
+  &:hover{
+    color: #FFF;
+  }
+}
+
+.nav-logo-text {
+  text-decoration: none;
+  color: #ffffff;
+}
