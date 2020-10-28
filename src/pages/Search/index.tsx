@@ -45,8 +45,6 @@ export const Search = () => {
       });
   }, [search]);
 
-  console.log(user);
-
   const onSubmit = (data: Search) => {
     setSearch(data.text);
   };
