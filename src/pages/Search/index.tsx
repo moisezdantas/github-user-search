@@ -66,18 +66,19 @@ export const Search = () => {
           </div>
         </form>
       </div>
-      {user && isUser && (
-        <section className="info-container">
-          {loading && (
-            <div className="loader-container">
-              <div className="left-loader">
-                <ImageLoader />
-              </div>
-              <div className="right-loader">
-                <InfoLoader />
-              </div>
+
+      <section className={isUser ? 'info-container' : ''}>
+        {loading && (
+          <div className="loader-container ">
+            <div className="left-loader">
+              <ImageLoader />
             </div>
-          )}
+            <div className="right-loader">
+              <InfoLoader />
+            </div>
+          </div>
+        )}
+        {user && isUser && (
           <div className="search-info">
             <div className="search-info-left">
               <img src={user?.avatar_url} alt={user?.avatar_url} />
@@ -93,8 +94,8 @@ export const Search = () => {
               <DetailUser user={user} />
             </div>
           </div>
-        </section>
-      )}
+        )}
+      </section>
     </Fragment>
   );
 };

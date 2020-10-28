@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { User } from "../../../../core/type/User";
+import './styles.scss';
 
 interface Props {
     user?: User;
