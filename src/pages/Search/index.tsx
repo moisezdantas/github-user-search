@@ -26,13 +26,14 @@ export const Search = () => {
     if (!search) return;
     setLoading(true);
     setIsNotFound(true);
+    setIsUser(false);
     makeRequest({ url: `${search}` })
       .then((response) => {
         const user = {
           ...response.data,
           dateFormat: dayjs(response.data?.created_at).format("DD/MM/YYYY"),
         };
-        setIsUser(user ? true : false);
+        setIsUser(true);
         setUser(user);
       })
       .catch(() => {
@@ -43,6 +44,8 @@ export const Search = () => {
         setLoading(false);
       });
   }, [search]);
+
+  console.log(user);
 
   const onSubmit = (data: Search) => {
     setSearch(data.text);

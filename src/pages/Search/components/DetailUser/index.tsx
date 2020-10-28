@@ -29,7 +29,7 @@ const DetailUser = ({user}: Props) => {
           <strong>Localidade:</strong> {user?.location}
         </h1>
         <h1 className="infos-text">
-          <strong>Membro desde:</strong>
+          <strong>Membro desde:</strong> {user?.dateFormat}
         </h1>
       </div>
     </Fragment>
